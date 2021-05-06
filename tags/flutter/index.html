@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <title>Archives: 2021/4 | Paofan&amp;Orange</title>
+  <title>Tag: flutter | Paofan&amp;Orange</title>
   <meta name="description" content="welcome" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="320" />
@@ -177,176 +177,29 @@
         <header class="post-header">
             <div class="tag-tile">
                 
+                
+                <a data-pjax href='/tags/flutter/'>flutter</a>
+                
+                
                 <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
             </div>
-            <h1 class="post-title"><a data-pjax href="/2021/04/13/Gradle_Plugin_Shrink_Image/">Gradle插件-图片</a>
+            <h1 class="post-title"><a data-pjax href="/2021/05/06/Flutter_Boost/">Flutter Boost 1</a>
             </h1>
 
             <div class="post-meta">
                 Post on<span class="fa fa-clock-o"></span>
-                <time datetime="2021-04-13T11:30:00.000Z"
-                      itemprop="datePublished">2021-04-13</time>
+                <time datetime="2021-05-06T11:30:00.000Z"
+                      itemprop="datePublished">2021-05-06</time>
             </div>
         </header>
         <section class="post-excerpt">
             <p>
                 
-                shrinkImage是无侵入式全量扫描、压缩图片的插件，主要提供下面功能：
-检查大图资源
-支持自定义图片大小
-支持自定义图片宽高
+                Flutter BoostFlutter_Boost是闲鱼开源的Flutter框架，主要针对混合开发的项目，利于Flutter Engine共享方案实现混合栈管理
+Android项目集成本次调研是以Flutter Module的形式将Flutter集成到android项目，优势是无需改动项目原有结构，可以保证Android和Flutter单独开发没有强依赖，最终Flutter以aar的形式集成到项目中。
+集成步骤：
 
-
-检查重复图片资源
-通过MD5算法扫描重复图片
-
-
-全量压缩图片或转webp
-支持pngquant算法压缩png图片
-支持guetzli算法压缩jpg图片
-支持cwebp算法转webp格式
-
-
-
-插件作用范围：
-主工程中的图片资源
-jar包中的图片资源
-aar中的图片资源
-Library中的图片资源
-
-使
-                
-            </p>
-            
-        </section>
-    </article>
-    
-    <article class="post">
-
-        <header class="post-header">
-            <div class="tag-tile">
-                
-                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
-            </div>
-            <h1 class="post-title"><a data-pjax href="/2021/04/12/auto_install_module/">自动化装卸载Module功能</a>
-            </h1>
-
-            <div class="post-meta">
-                Post on<span class="fa fa-clock-o"></span>
-                <time datetime="2021-04-12T06:57:00.000Z"
-                      itemprop="datePublished">2021-04-12</time>
-            </div>
-        </header>
-        <section class="post-excerpt">
-            <p>
-                
-                1. 功能介绍
-脚本支持自动装载模块、卸载模块、源码和aar互转功能
-需要少量侵入代码，第一次使用需要确认打出的包是否包含指定依赖
-
-2. 如何引入
-添加脚本文件
-
-把dependencyUtil.gradle和wmModuleMavenUrl.gradle文件添加到项目根目录或有权限的子目录
-
-
-项目build.gradle文件添加依赖
-
-
-12345apply from: &quot;$rootDir/wmModuleMavenUr
-                
-            </p>
-            
-        </section>
-    </article>
-    
-    <article class="post">
-
-        <header class="post-header">
-            <div class="tag-tile">
-                
-                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
-            </div>
-            <h1 class="post-title"><a data-pjax href="/2021/04/12/batch_auto_package_aar/">批量自动化打AAR包功能</a>
-            </h1>
-
-            <div class="post-meta">
-                Post on<span class="fa fa-clock-o"></span>
-                <time datetime="2021-04-12T06:57:00.000Z"
-                      itemprop="datePublished">2021-04-12</time>
-            </div>
-        </header>
-        <section class="post-excerpt">
-            <p>
-                
-                1. 功能介绍
-支持批量自动分析依赖路径打aar包上传maven仓库
-
-2. 如何引入
-添加脚本脚本
-
-把packAAR.gradle、configModule.gradle和wmModuleMavenUrl.gradle文件添加到项目根目录或有权限的子目录
-
-
-修改项目build.gradle文件
-
-
-12345apply from: &quot;$rootDir/wmModuleMavenUrl.gradle&quot;apply 
-                
-            </p>
-            
-        </section>
-    </article>
-    
-    <article class="post">
-
-        <header class="post-header">
-            <div class="tag-tile">
-                
-                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
-            </div>
-            <h1 class="post-title"><a data-pjax href="/2021/04/09/png-structure/">png structure</a>
-            </h1>
-
-            <div class="post-meta">
-                Post on<span class="fa fa-clock-o"></span>
-                <time datetime="2021-04-09T12:59:08.000Z"
-                      itemprop="datePublished">2021-04-09</time>
-            </div>
-        </header>
-        <section class="post-excerpt">
-            <p>
-                
-                <h3 id="png图片-结构"><a href="#png图片-结构" class="headerlink" title="png图片-结构"></a>png图片-结构</h3><h4 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h4><blockquote>
-<p>Portable Network Graphics (PNG) is a raster graphics file format that supports lossless data compression.</p>
-</blockquote>
-                
-            </p>
-            
-        </section>
-    </article>
-    
-    <article class="post">
-
-        <header class="post-header">
-            <div class="tag-tile">
-                
-                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
-            </div>
-            <h1 class="post-title"><a data-pjax href="/2021/04/08/hello-world/">Hello World</a>
-            </h1>
-
-            <div class="post-meta">
-                Post on<span class="fa fa-clock-o"></span>
-                <time datetime="2021-04-08T04:28:59.382Z"
-                      itemprop="datePublished">2021-04-08</time>
-            </div>
-        </header>
-        <section class="post-excerpt">
-            <p>
-                
-                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new p
+安装Flutter
                 
             </p>
             
