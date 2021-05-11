@@ -209,6 +209,16 @@
 <h5 id="4-无需单独的声明式布局语言"><a href="#4-无需单独的声明式布局语言" class="headerlink" title="4. 无需单独的声明式布局语言"></a><strong>4. 无需单独的声明式布局语言</strong></h5><p>Dart的声明式编程布局易于阅读和可视化，不需要类似JSX或XML的声明式布局语言</p>
 <p>开发过程也不需要可视化界面编辑器，热重载可以很快在手机上看到运行效果</p>
 <h5 id="5-Dart的未来"><a href="#5-Dart的未来" class="headerlink" title="5. Dart的未来"></a><strong>5. Dart的未来</strong></h5><p>随着Flutter和Fuchsia的推动，Dart SDK的迭代速度更快，Dart的生态正变得更加成熟</p>
+<h4 id="Flutter优势"><a href="#Flutter优势" class="headerlink" title="Flutter优势"></a><strong>Flutter优势</strong></h4><ol>
+<li>跨平台 - 提高代码复用，抹平了平台差异性带来的开发效率问题 </li>
+<li>高保真 - 底层渲染到上层开发语言的完整解决方案</li>
+<li>高性能 - 代码执行效率和渲染性能媲美原生app</li>
+</ol>
+<h4 id="Widget"><a href="#Widget" class="headerlink" title="Widget"></a><strong>Widget</strong></h4><p>Flutter将Widget设计成不可变的，当视图渲染配置信息发生变化时，Flutter会选择重建Widget树的方式进行数据更新，以数据驱动UI构建的方式简单高效。</p>
+<p>缺点是涉及大量Widget对象的销毁和重建，对内存分配和垃圾回收会造成压力。不过Widget本身并不涉及实际渲染位图，所以只是轻量级的数据结构，重建的成本很低</p>
+<p>另外，由于Widget的不可变性，可以以较低成本进行渲染节点复用，因此在真实的渲染树中可能存在不同的Widget对应一个渲染节点(Element)的情况，这无疑有降低了重建UI的成本</p>
+<h4 id="Element"><a href="#Element" class="headerlink" title="Element"></a><strong>Element</strong></h4><p>因为Widget具有不可变性，但Element却是可变的。Element树这一层将Widget树的变化做了抽象，可以只将真正需要修改的部分同步到真实的RenderObject树中，提高渲染效率，而不是销毁整个渲染视图树重建</p>
+<h4 id="RenderObject"><a href="#RenderObject" class="headerlink" title="RenderObject"></a><strong>RenderObject</strong></h4><p>Flutter采用深度优先遍历机制渲染对象树，确定树中各个对象的位置和尺寸，并把他们绘制到不同的图层上，绘制完毕后，合成和渲染的工作交由Skia完成</p>
 
         </section>
         <hr/>
