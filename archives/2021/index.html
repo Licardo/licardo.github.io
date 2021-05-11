@@ -43,6 +43,10 @@
                                 <div class="mp-scroll">
                                 
                                 <li class="search-archive-li mp-pjax">
+                                    <a href="/2021/05/11/ras_pi-config/">树莓派配置</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
                                     <a href="/2021/05/09/Flutter总结/">Flutter总结</a>
                                 </li>
                                 
@@ -110,6 +114,11 @@
                                     <small>2</small>
                                 </li>
                                 
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/pi/">&nbsp;&nbsp;&nbsp;pi</a>
+                                    <small>1</small>
+                                </li>
+                                
                                 </div>
                             </ul>
                         </div>
@@ -124,6 +133,8 @@
         </nav>
         <div id="pjax">
             <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/2021/05/11/ras_pi-config/">树莓派配置</a>
                 
                     <a  data-pjax href="/2021/05/09/Flutter总结/">Flutter总结</a>
                 
@@ -142,6 +153,8 @@
                 
                 
                     <a data-pjax href="/tags/flutter/">&nbsp;&nbsp;flutter</a>
+                
+                    <a data-pjax href="/tags/pi/">&nbsp;&nbsp;pi</a>
                 
                 <a data-pjax class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a>
             </div>
@@ -177,6 +190,45 @@
   
 <main class="content" role="main">
 
+    
+    <article class="post">
+
+        <header class="post-header">
+            <div class="tag-tile">
+                
+                
+                <a data-pjax href='/tags/pi/'>pi</a>
+                
+                
+                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
+            </div>
+            <h1 class="post-title"><a data-pjax href="/2021/05/11/ras_pi-config/">树莓派配置</a>
+            </h1>
+
+            <div class="post-meta">
+                Post on<span class="fa fa-clock-o"></span>
+                <time datetime="2021-05-11T13:07:00.000Z"
+                      itemprop="datePublished">2021-05-11</time>
+            </div>
+        </header>
+        <section class="post-excerpt">
+            <p>
+                
+                Crontab
+编辑：cron -e
+查看任务：cron -l
+查看log：cat /var/log/cron.log   or  tail -f /var/log/cron.log
+重启cron服务：sudo /etc/init.d/cron restart
+删除crontab文件：cron -r
+
+注意第一次使用crontab会找不到cron.log文件，需要两部操作，如下：
+
+sudo vim /etc/rsyslog.d/50-
+                
+            </p>
+            
+        </section>
+    </article>
     
     <article class="post">
 
